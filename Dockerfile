@@ -8,3 +8,4 @@ RUN yum update -y && \
     yum clean all
 
 RUN echo 'alias vi=vim' >> /etc/profile
+RUN cp -p /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
