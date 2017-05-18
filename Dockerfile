@@ -8,7 +8,3 @@ RUN yum update -y && \
     yum clean all
 
 RUN echo 'alias vi=vim' >> /etc/profile
-
-COPY ./vim/.vimrc /.vimrc
-COPY ./vim/.vim/dein.toml /.vim/rc/dein.toml
-COPY ./vim/.vim/dein_lazy.toml /.vim/rc/dein_lazy.toml
